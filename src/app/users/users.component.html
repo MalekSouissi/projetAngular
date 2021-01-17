@@ -15,11 +15,11 @@
                 <div class="mb-3">
                   <label for="userlname" class="form-label">Nom : </label>
                   <i class="far fa-trash-alt delete"></i>
-                  <input type="text" class="form-control" id="userlname" />
+                  <input type="text" class="form-control" id="userlname" value={{user.Nom}} />
                 </div>
                 <div class="mb-3">
                   <label for="userfname" class="form-label">Prénom : </label>
-                  <input type="text" class="form-control" id="userfname" />
+                  <input type="text" class="form-control" id="userfname" value={{user.Prenom}} />
                 </div>
                 <div class="mb-3">
                   <label for="usercnb" class="form-label"
@@ -29,7 +29,7 @@
                     type="number"
                     class="form-control col-3"
                     id="usercnb"
-                    value="0"
+                    value={{user.enfant}}
                   />
                 </div>
               </form>
