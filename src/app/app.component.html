@@ -1,0 +1,30 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+    integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+    crossorigin="anonymous" />
+<router-outlet></router-outlet>
+
+
+<ng-sidebar-container>
+    <ng-sidebar [opened]="opened">
+        <div (click)="toggleSidebar()" >
+            <h4><i class="fas fa-cogs pr-2" aria-hidden="true" style="font-size: 25px;"></i> Configuration</h4>
+        </div>
+        <div>
+            <form action="/action_page.php">
+              <label for="fname">NOM</label>
+              <input type="text" id="lname" name="firstname" placeholder="Nom">
+          
+              <label for="lname">PRENOM</label>
+              <input type="text" id="lname" name="lastname" placeholder="Prenom">
+          
+              <label for="lname">NOMBRE D'ENFANTS</label>
+              <input type="text" id="lname" name="lastname" placeholder="Nombre d'enfant">
+            </form>
+          </div>
+    </ng-sidebar>
+    <app-button></app-button>
+
+    <div ng-sidebar-content>
+        <app-users (click)="toggleSidebar()"></app-users>
+    </div>
+</ng-sidebar-container>

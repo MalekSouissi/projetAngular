@@ -1,0 +1,45 @@
+.card
+{
+    padding: 10px;
+    background-color: #E8D0A2;
+    color:  #003049;
+    font-size: 15px;
+    font-weight: 500;
+    margin: 20px;
+    border-radius: 25px;
+    border: none;
+}
+ul li 
+{
+    list-style: none;
+}
+.box_card
+{
+    border: dashed 5px #003049;
+    border-radius: 20px;
+    background-color: transparent;
+    height: 310px;
+    width: 265px;
+    margin-left: 15px;
+    margin-top: 20px;
+}
+.box_icon
+{
+    border: none;
+    display: block;
+    color: #003049;
+    font-size: 100px;
+    text-align: center;
+    margin-top: 100px;
+    margin-left: auto;
+}
+.form-control{
+    border: none;
+    background-color: white;
+    opacity: 0.5;
+}
+.delete {
+font-size: 20px;
+color: #003049;
+margin-left: 150px;
+}

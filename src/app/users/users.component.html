@@ -1,0 +1,50 @@
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+  integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+  crossorigin="anonymous"
+/>
+<div class="container">
+  <ul>
+    <div class="row">
+      <li *ngFor="let user of users">
+        <div>
+          <div class="card" >
+            <div class="card-body">
+              <form>
+                <div class="mb-3">
+                  <label for="userlname" class="form-label">Nom : </label>
+                  <i class="far fa-trash-alt delete"></i>
+                  <input type="text" class="form-control" id="userlname" />
+                </div>
+                <div class="mb-3">
+                  <label for="userfname" class="form-label">Prénom : </label>
+                  <input type="text" class="form-control" id="userfname" />
+                </div>
+                <div class="mb-3">
+                  <label for="usercnb" class="form-label"
+                    >Nombre d'enfant :
+                  </label>
+                  <input
+                    type="number"
+                    class="form-control col-3"
+                    id="usercnb"
+                    value="0"
+                  />
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </li>
+      <div class="box_card">
+        <form class="form_style">
+            <div  class="box_icon">
+                <i class="fas fa-plus" (click)="plusfun()"></i>
+            </div>
+        </form>
+    </div>
+    </div>
+
+  </ul>
+</div>
